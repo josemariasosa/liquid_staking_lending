@@ -27,9 +27,13 @@ contract BaseSetUp is Test {
             // uint256 _optimalRateRAY,
             21,
             // uint256 _maxRateRAY,
+            30,
             // uint256 _breakpointRAY,
+            28,
             // uint256 _maxSlashableAmountPerLivenessUpper,
+            100,
             // uint256 _maxSlashableAmountPerCorruptionUpper
-        )
+            100
+        );
     }
 }

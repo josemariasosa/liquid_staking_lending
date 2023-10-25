@@ -37,7 +37,7 @@ contract KSquaredLendingDepositor {
             );
         }
 
-        IERC20(kethVault).safeApprove(kSquaredLending, amount);
+        IERC20(kethVault).approve(kSquaredLending, amount);
         KSquaredLending(kSquaredLending).depositFor(amount, msg.sender);
     }
 }

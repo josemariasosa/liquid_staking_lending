@@ -2,7 +2,7 @@
 pragma solidity ^0.8.20;
 
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import {EIP712} from "@openzeppelin/contracts/utils/cryptography/EIP712.sol";
 import {Address} from "@openzeppelin/contracts/utils/Address.sol";
 import {ECDSA} from "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
@@ -70,7 +70,10 @@ contract ReporterRegistry is Ownable, EIP712, ReentrancyGuard {
         address _kSquaredLendingPool,
         string memory _eip712Name,
         string memory _eip712VersionName
-    ) Ownable() EIP712(_eip712Name, _eip712VersionName) ReentrancyGuard() {
+    )
+        Ownable(msg.sender)
+        EIP712(_eip712Name, _eip712VersionName)
+    {
         kSquaredLendingPool = _kSquaredLendingPool;
     }
 
@@ -79,7 +82,11 @@ contract ReporterRegistry is Ownable, EIP712, ReentrancyGuard {
         address reporter = msg.sender;
 
         require(!isReporterActive[reporter], "Reporter already registered");
-        require(!Address.isContract(reporter), "Contracts cannot be reporters");
+        // In conclusion, for security considerations, it is not recommended to directly
+        // use the return value of Address.isContract() to determine whether a caller is
+        // a contract or not. require(msg.sender == tx.orign) works now and is a better practice.
+        // require(!Address.isContract(reporter), "Contracts cannot be reporters");
+        require(msg.sender == tx.origin, "Contracts cannot be reporters");
 
         isReporterActive[reporter] = true;
 

@@ -48,10 +48,10 @@
   "methodIdentifiers": {
     "getInterestRate(uint256,uint256,uint256,uint256)": "e1d78c2e"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assumedLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"availableLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxSlashableAmountPerLiveness\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxSlashableAmountPerCorruption\",\"type\":\"uint256\"}],\"name\":\"getInterestRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IInterestRateModel.sol\":\"IInterestRateModel\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"contracts/interfaces/IInterestRateModel.sol\":{\"keccak256\":\"0xe134385594a214f06826824cdfc23213b90d506f7328b7f25521a1383aee3a70\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://2203e2662f6fc311f8ebd5cedc72b3a71a59d95503e252a37b9ded3503137d6f\",\"dweb:/ipfs/QmXJ3D2v1JPPHuE6G51dbiNEnvKmEn79n4GdB8t2DuBL35\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"assumedLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"availableLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxSlashableAmountPerLiveness\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxSlashableAmountPerCorruption\",\"type\":\"uint256\"}],\"name\":\"getInterestRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IInterestRateModel.sol\":\"IInterestRateModel\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"contracts/interfaces/IInterestRateModel.sol\":{\"keccak256\":\"0xe134385594a214f06826824cdfc23213b90d506f7328b7f25521a1383aee3a70\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://2203e2662f6fc311f8ebd5cedc72b3a71a59d95503e252a37b9ded3503137d6f\",\"dweb:/ipfs/QmXJ3D2v1JPPHuE6G51dbiNEnvKmEn79n4GdB8t2DuBL35\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.21+commit.d9974bed"
+      "version": "0.8.20+commit.a1b79de6"
     },
     "language": "Solidity",
     "output": {
@@ -105,9 +105,9 @@
     "settings": {
       "remappings": [
         "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
-        "ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
         "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
-        "forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/",
+        "forge-std/=lib/forge-std/src/",
         "openzeppelin-contracts/=lib/openzeppelin-contracts/"
       ],
       "optimizer": {

@@ -114,10 +114,10 @@
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"needed\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ERC1155InsufficientBalance\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"approver\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidApprover\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"idsLength\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"valuesLength\",\"type\":\"uint256\"}],\"name\":\"ERC1155InvalidArrayLength\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidOperator\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidReceiver\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidSender\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"ERC1155MissingApprovalForAll\",\"type\":\"error\"}],\"devdoc\":{\"details\":\"Standard ERC1155 Errors Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC1155 tokens.\",\"errors\":{\"ERC1155InsufficientBalance(address,uint256,uint256,uint256)\":[{\"details\":\"Indicates an error related to the current `balance` of a `sender`. Used in transfers.\",\"params\":{\"balance\":\"Current balance for the interacting account.\",\"needed\":\"Minimum amount required to perform a transfer.\",\"sender\":\"Address whose tokens are being transferred.\",\"tokenId\":\"Identifier number of a token.\"}}],\"ERC1155InvalidApprover(address)\":[{\"details\":\"Indicates a failure with the `approver` of a token to be approved. Used in approvals.\",\"params\":{\"approver\":\"Address initiating an approval operation.\"}}],\"ERC1155InvalidArrayLength(uint256,uint256)\":[{\"details\":\"Indicates an array length mismatch between ids and values in a safeBatchTransferFrom operation. Used in batch transfers.\",\"params\":{\"idsLength\":\"Length of the array of token identifiers\",\"valuesLength\":\"Length of the array of token amounts\"}}],\"ERC1155InvalidOperator(address)\":[{\"details\":\"Indicates a failure with the `operator` to be approved. Used in approvals.\",\"params\":{\"operator\":\"Address that may be allowed to operate on tokens without being their owner.\"}}],\"ERC1155InvalidReceiver(address)\":[{\"details\":\"Indicates a failure with the token `receiver`. Used in transfers.\",\"params\":{\"receiver\":\"Address to which tokens are being transferred.\"}}],\"ERC1155InvalidSender(address)\":[{\"details\":\"Indicates a failure with the token `sender`. Used in transfers.\",\"params\":{\"sender\":\"Address whose tokens are being transferred.\"}}],\"ERC1155MissingApprovalForAll(address,address)\":[{\"details\":\"Indicates a failure with the `operator`\\u2019s approval. Used in transfers.\",\"params\":{\"operator\":\"Address that may be allowed to operate on tokens without being their owner.\",\"owner\":\"Address of the current owner of a token.\"}}]},\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol\":\"IERC1155Errors\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol\":{\"keccak256\":\"0x60c65f701957fdd6faea1acb0bb45825791d473693ed9ecb34726fdfaa849dd7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea290300e0efc4d901244949dc4d877fd46e6c5e43dc2b26620e8efab3ab803f\",\"dweb:/ipfs/QmcLLJppxKeJWqHxE2CUkcfhuRTgHSn8J4kijcLa5MYhSt\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"needed\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ERC1155InsufficientBalance\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"approver\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidApprover\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"idsLength\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"valuesLength\",\"type\":\"uint256\"}],\"name\":\"ERC1155InvalidArrayLength\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidOperator\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidReceiver\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"ERC1155InvalidSender\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"ERC1155MissingApprovalForAll\",\"type\":\"error\"}],\"devdoc\":{\"details\":\"Standard ERC1155 Errors Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC1155 tokens.\",\"errors\":{\"ERC1155InsufficientBalance(address,uint256,uint256,uint256)\":[{\"details\":\"Indicates an error related to the current `balance` of a `sender`. Used in transfers.\",\"params\":{\"balance\":\"Current balance for the interacting account.\",\"needed\":\"Minimum amount required to perform a transfer.\",\"sender\":\"Address whose tokens are being transferred.\",\"tokenId\":\"Identifier number of a token.\"}}],\"ERC1155InvalidApprover(address)\":[{\"details\":\"Indicates a failure with the `approver` of a token to be approved. Used in approvals.\",\"params\":{\"approver\":\"Address initiating an approval operation.\"}}],\"ERC1155InvalidArrayLength(uint256,uint256)\":[{\"details\":\"Indicates an array length mismatch between ids and values in a safeBatchTransferFrom operation. Used in batch transfers.\",\"params\":{\"idsLength\":\"Length of the array of token identifiers\",\"valuesLength\":\"Length of the array of token amounts\"}}],\"ERC1155InvalidOperator(address)\":[{\"details\":\"Indicates a failure with the `operator` to be approved. Used in approvals.\",\"params\":{\"operator\":\"Address that may be allowed to operate on tokens without being their owner.\"}}],\"ERC1155InvalidReceiver(address)\":[{\"details\":\"Indicates a failure with the token `receiver`. Used in transfers.\",\"params\":{\"receiver\":\"Address to which tokens are being transferred.\"}}],\"ERC1155InvalidSender(address)\":[{\"details\":\"Indicates a failure with the token `sender`. Used in transfers.\",\"params\":{\"sender\":\"Address whose tokens are being transferred.\"}}],\"ERC1155MissingApprovalForAll(address,address)\":[{\"details\":\"Indicates a failure with the `operator`\\u2019s approval. Used in transfers.\",\"params\":{\"operator\":\"Address that may be allowed to operate on tokens without being their owner.\",\"owner\":\"Address of the current owner of a token.\"}}]},\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol\":\"IERC1155Errors\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol\":{\"keccak256\":\"0x60c65f701957fdd6faea1acb0bb45825791d473693ed9ecb34726fdfaa849dd7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea290300e0efc4d901244949dc4d877fd46e6c5e43dc2b26620e8efab3ab803f\",\"dweb:/ipfs/QmcLLJppxKeJWqHxE2CUkcfhuRTgHSn8J4kijcLa5MYhSt\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.21+commit.d9974bed"
+      "version": "0.8.20+commit.a1b79de6"
     },
     "language": "Solidity",
     "output": {
@@ -239,9 +239,9 @@
     "settings": {
       "remappings": [
         "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
-        "ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
         "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
-        "forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/",
+        "forge-std/=lib/forge-std/src/",
         "openzeppelin-contracts/=lib/openzeppelin-contracts/"
       ],
       "optimizer": {
@@ -270,25 +270,25 @@
   },
   "ast": {
     "absolutePath": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
-    "id": 2953,
+    "id": 46302,
     "exportedSymbols": {
       "IERC1155Errors": [
-        2952
+        46301
       ],
       "IERC20Errors": [
-        2857
+        46206
       ],
       "IERC721Errors": [
-        2905
+        46254
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "112:6420:13",
+    "src": "112:6420:31",
     "nodes": [
       {
-        "id": 2817,
+        "id": 46166,
         "nodeType": "PragmaDirective",
-        "src": "112:24:13",
+        "src": "112:24:31",
         "nodes": [],
         "literals": [
           "solidity",
@@ -298,37 +298,37 @@
         ]
       },
       {
-        "id": 2857,
+        "id": 46206,
         "nodeType": "ContractDefinition",
-        "src": "278:1764:13",
+        "src": "278:1764:31",
         "nodes": [
           {
-            "id": 2827,
+            "id": 46176,
             "nodeType": "ErrorDefinition",
-            "src": "621:80:13",
+            "src": "621:80:31",
             "nodes": [],
             "documentation": {
-              "id": 2819,
+              "id": 46168,
               "nodeType": "StructuredDocumentation",
-              "src": "307:309:13",
+              "src": "307:309:31",
               "text": " @dev Indicates an error related to the current `balance` of a `sender`. Used in transfers.\n @param sender Address whose tokens are being transferred.\n @param balance Current balance for the interacting account.\n @param needed Minimum amount required to perform a transfer."
             },
             "errorSelector": "e450d38c",
             "name": "ERC20InsufficientBalance",
-            "nameLocation": "627:24:13",
+            "nameLocation": "627:24:31",
             "parameters": {
-              "id": 2826,
+              "id": 46175,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2821,
+                  "id": 46170,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "660:6:13",
+                  "nameLocation": "660:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2827,
-                  "src": "652:14:13",
+                  "scope": 46176,
+                  "src": "652:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -336,10 +336,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2820,
+                    "id": 46169,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "652:7:13",
+                    "src": "652:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -350,13 +350,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2823,
+                  "id": 46172,
                   "mutability": "mutable",
                   "name": "balance",
-                  "nameLocation": "676:7:13",
+                  "nameLocation": "676:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2827,
-                  "src": "668:15:13",
+                  "scope": 46176,
+                  "src": "668:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -364,10 +364,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2822,
+                    "id": 46171,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "668:7:13",
+                    "src": "668:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -377,13 +377,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2825,
+                  "id": 46174,
                   "mutability": "mutable",
                   "name": "needed",
-                  "nameLocation": "693:6:13",
+                  "nameLocation": "693:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2827,
-                  "src": "685:14:13",
+                  "scope": 46176,
+                  "src": "685:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -391,10 +391,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2824,
+                    "id": 46173,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "685:7:13",
+                    "src": "685:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -403,36 +403,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "651:49:13"
+              "src": "651:49:31"
             }
           },
           {
-            "id": 2832,
+            "id": 46181,
             "nodeType": "ErrorDefinition",
-            "src": "864:41:13",
+            "src": "864:41:31",
             "nodes": [],
             "documentation": {
-              "id": 2828,
+              "id": 46177,
               "nodeType": "StructuredDocumentation",
-              "src": "707:152:13",
+              "src": "707:152:31",
               "text": " @dev Indicates a failure with the token `sender`. Used in transfers.\n @param sender Address whose tokens are being transferred."
             },
             "errorSelector": "96c6fd1e",
             "name": "ERC20InvalidSender",
-            "nameLocation": "870:18:13",
+            "nameLocation": "870:18:31",
             "parameters": {
-              "id": 2831,
+              "id": 46180,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2830,
+                  "id": 46179,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "897:6:13",
+                  "nameLocation": "897:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2832,
-                  "src": "889:14:13",
+                  "scope": 46181,
+                  "src": "889:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -440,10 +440,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2829,
+                    "id": 46178,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "889:7:13",
+                    "src": "889:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -453,36 +453,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "888:16:13"
+              "src": "888:16:31"
             }
           },
           {
-            "id": 2837,
+            "id": 46186,
             "nodeType": "ErrorDefinition",
-            "src": "1075:45:13",
+            "src": "1075:45:31",
             "nodes": [],
             "documentation": {
-              "id": 2833,
+              "id": 46182,
               "nodeType": "StructuredDocumentation",
-              "src": "911:159:13",
+              "src": "911:159:31",
               "text": " @dev Indicates a failure with the token `receiver`. Used in transfers.\n @param receiver Address to which tokens are being transferred."
             },
             "errorSelector": "ec442f05",
             "name": "ERC20InvalidReceiver",
-            "nameLocation": "1081:20:13",
+            "nameLocation": "1081:20:31",
             "parameters": {
-              "id": 2836,
+              "id": 46185,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2835,
+                  "id": 46184,
                   "mutability": "mutable",
                   "name": "receiver",
-                  "nameLocation": "1110:8:13",
+                  "nameLocation": "1110:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2837,
-                  "src": "1102:16:13",
+                  "scope": 46186,
+                  "src": "1102:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -490,10 +490,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2834,
+                    "id": 46183,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1102:7:13",
+                    "src": "1102:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -503,36 +503,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1101:18:13"
+              "src": "1101:18:31"
             }
           },
           {
-            "id": 2846,
+            "id": 46195,
             "nodeType": "ErrorDefinition",
-            "src": "1476:85:13",
+            "src": "1476:85:31",
             "nodes": [],
             "documentation": {
-              "id": 2838,
+              "id": 46187,
               "nodeType": "StructuredDocumentation",
-              "src": "1126:345:13",
+              "src": "1126:345:31",
               "text": " @dev Indicates a failure with the `spender`’s `allowance`. Used in transfers.\n @param spender Address that may be allowed to operate on tokens without being their owner.\n @param allowance Amount of tokens a `spender` is allowed to operate with.\n @param needed Minimum amount required to perform a transfer."
             },
             "errorSelector": "fb8f41b2",
             "name": "ERC20InsufficientAllowance",
-            "nameLocation": "1482:26:13",
+            "nameLocation": "1482:26:31",
             "parameters": {
-              "id": 2845,
+              "id": 46194,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2840,
+                  "id": 46189,
                   "mutability": "mutable",
                   "name": "spender",
-                  "nameLocation": "1517:7:13",
+                  "nameLocation": "1517:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2846,
-                  "src": "1509:15:13",
+                  "scope": 46195,
+                  "src": "1509:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -540,10 +540,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2839,
+                    "id": 46188,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1509:7:13",
+                    "src": "1509:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -554,13 +554,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2842,
+                  "id": 46191,
                   "mutability": "mutable",
                   "name": "allowance",
-                  "nameLocation": "1534:9:13",
+                  "nameLocation": "1534:9:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2846,
-                  "src": "1526:17:13",
+                  "scope": 46195,
+                  "src": "1526:17:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -568,10 +568,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2841,
+                    "id": 46190,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1526:7:13",
+                    "src": "1526:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -581,13 +581,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2844,
+                  "id": 46193,
                   "mutability": "mutable",
                   "name": "needed",
-                  "nameLocation": "1553:6:13",
+                  "nameLocation": "1553:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2846,
-                  "src": "1545:14:13",
+                  "scope": 46195,
+                  "src": "1545:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -595,10 +595,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2843,
+                    "id": 46192,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1545:7:13",
+                    "src": "1545:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -607,36 +607,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1508:52:13"
+              "src": "1508:52:31"
             }
           },
           {
-            "id": 2851,
+            "id": 46200,
             "nodeType": "ErrorDefinition",
-            "src": "1746:45:13",
+            "src": "1746:45:31",
             "nodes": [],
             "documentation": {
-              "id": 2847,
+              "id": 46196,
               "nodeType": "StructuredDocumentation",
-              "src": "1567:174:13",
+              "src": "1567:174:31",
               "text": " @dev Indicates a failure with the `approver` of a token to be approved. Used in approvals.\n @param approver Address initiating an approval operation."
             },
             "errorSelector": "e602df05",
             "name": "ERC20InvalidApprover",
-            "nameLocation": "1752:20:13",
+            "nameLocation": "1752:20:31",
             "parameters": {
-              "id": 2850,
+              "id": 46199,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2849,
+                  "id": 46198,
                   "mutability": "mutable",
                   "name": "approver",
-                  "nameLocation": "1781:8:13",
+                  "nameLocation": "1781:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2851,
-                  "src": "1773:16:13",
+                  "scope": 46200,
+                  "src": "1773:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -644,10 +644,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2848,
+                    "id": 46197,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1773:7:13",
+                    "src": "1773:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -657,36 +657,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1772:18:13"
+              "src": "1772:18:31"
             }
           },
           {
-            "id": 2856,
+            "id": 46205,
             "nodeType": "ErrorDefinition",
-            "src": "1997:43:13",
+            "src": "1997:43:31",
             "nodes": [],
             "documentation": {
-              "id": 2852,
+              "id": 46201,
               "nodeType": "StructuredDocumentation",
-              "src": "1797:195:13",
+              "src": "1797:195:31",
               "text": " @dev Indicates a failure with the `spender` to be approved. Used in approvals.\n @param spender Address that may be allowed to operate on tokens without being their owner."
             },
             "errorSelector": "94280d62",
             "name": "ERC20InvalidSpender",
-            "nameLocation": "2003:19:13",
+            "nameLocation": "2003:19:31",
             "parameters": {
-              "id": 2855,
+              "id": 46204,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2854,
+                  "id": 46203,
                   "mutability": "mutable",
                   "name": "spender",
-                  "nameLocation": "2031:7:13",
+                  "nameLocation": "2031:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2856,
-                  "src": "2023:15:13",
+                  "scope": 46205,
+                  "src": "2023:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -694,10 +694,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2853,
+                    "id": 46202,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2023:7:13",
+                    "src": "2023:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -707,7 +707,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2022:17:13"
+              "src": "2022:17:31"
             }
           }
         ],
@@ -717,60 +717,60 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 2818,
+          "id": 46167,
           "nodeType": "StructuredDocumentation",
-          "src": "138:139:13",
+          "src": "138:139:31",
           "text": " @dev Standard ERC20 Errors\n Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC20 tokens."
         },
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          2857
+          46206
         ],
         "name": "IERC20Errors",
-        "nameLocation": "288:12:13",
-        "scope": 2953,
+        "nameLocation": "288:12:31",
+        "scope": 46302,
         "usedErrors": [
-          2827,
-          2832,
-          2837,
-          2846,
-          2851,
-          2856
+          46176,
+          46181,
+          46186,
+          46195,
+          46200,
+          46205
         ],
         "usedEvents": []
       },
       {
-        "id": 2905,
+        "id": 46254,
         "nodeType": "ContractDefinition",
-        "src": "2186:2092:13",
+        "src": "2186:2092:31",
         "nodes": [
           {
-            "id": 2863,
+            "id": 46212,
             "nodeType": "ErrorDefinition",
-            "src": "2440:40:13",
+            "src": "2440:40:31",
             "nodes": [],
             "documentation": {
-              "id": 2859,
+              "id": 46208,
               "nodeType": "StructuredDocumentation",
-              "src": "2216:219:13",
+              "src": "2216:219:31",
               "text": " @dev Indicates that an address can't be an owner. For example, `address(0)` is a forbidden owner in EIP-20.\n Used in balance queries.\n @param owner Address of the current owner of a token."
             },
             "errorSelector": "89c62b64",
             "name": "ERC721InvalidOwner",
-            "nameLocation": "2446:18:13",
+            "nameLocation": "2446:18:31",
             "parameters": {
-              "id": 2862,
+              "id": 46211,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2861,
+                  "id": 46210,
                   "mutability": "mutable",
                   "name": "owner",
-                  "nameLocation": "2473:5:13",
+                  "nameLocation": "2473:5:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2863,
-                  "src": "2465:13:13",
+                  "scope": 46212,
+                  "src": "2465:13:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -778,10 +778,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2860,
+                    "id": 46209,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2465:7:13",
+                    "src": "2465:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -791,36 +791,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2464:15:13"
+              "src": "2464:15:31"
             }
           },
           {
-            "id": 2868,
+            "id": 46217,
             "nodeType": "ErrorDefinition",
-            "src": "2623:46:13",
+            "src": "2623:46:31",
             "nodes": [],
             "documentation": {
-              "id": 2864,
+              "id": 46213,
               "nodeType": "StructuredDocumentation",
-              "src": "2486:132:13",
+              "src": "2486:132:31",
               "text": " @dev Indicates a `tokenId` whose `owner` is the zero address.\n @param tokenId Identifier number of a token."
             },
             "errorSelector": "7e273289",
             "name": "ERC721NonexistentToken",
-            "nameLocation": "2629:22:13",
+            "nameLocation": "2629:22:31",
             "parameters": {
-              "id": 2867,
+              "id": 46216,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2866,
+                  "id": 46215,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "2660:7:13",
+                  "nameLocation": "2660:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2868,
-                  "src": "2652:15:13",
+                  "scope": 46217,
+                  "src": "2652:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -828,10 +828,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2865,
+                    "id": 46214,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2652:7:13",
+                    "src": "2652:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -840,36 +840,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2651:17:13"
+              "src": "2651:17:31"
             }
           },
           {
-            "id": 2877,
+            "id": 46226,
             "nodeType": "ErrorDefinition",
-            "src": "2969:75:13",
+            "src": "2969:75:31",
             "nodes": [],
             "documentation": {
-              "id": 2869,
+              "id": 46218,
               "nodeType": "StructuredDocumentation",
-              "src": "2675:289:13",
+              "src": "2675:289:31",
               "text": " @dev Indicates an error related to the ownership over a particular token. Used in transfers.\n @param sender Address whose tokens are being transferred.\n @param tokenId Identifier number of a token.\n @param owner Address of the current owner of a token."
             },
             "errorSelector": "64283d7b",
             "name": "ERC721IncorrectOwner",
-            "nameLocation": "2975:20:13",
+            "nameLocation": "2975:20:31",
             "parameters": {
-              "id": 2876,
+              "id": 46225,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2871,
+                  "id": 46220,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "3004:6:13",
+                  "nameLocation": "3004:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2877,
-                  "src": "2996:14:13",
+                  "scope": 46226,
+                  "src": "2996:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -877,10 +877,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2870,
+                    "id": 46219,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2996:7:13",
+                    "src": "2996:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -891,13 +891,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2873,
+                  "id": 46222,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "3020:7:13",
+                  "nameLocation": "3020:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2877,
-                  "src": "3012:15:13",
+                  "scope": 46226,
+                  "src": "3012:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -905,10 +905,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2872,
+                    "id": 46221,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3012:7:13",
+                    "src": "3012:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -918,13 +918,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2875,
+                  "id": 46224,
                   "mutability": "mutable",
                   "name": "owner",
-                  "nameLocation": "3037:5:13",
+                  "nameLocation": "3037:5:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2877,
-                  "src": "3029:13:13",
+                  "scope": 46226,
+                  "src": "3029:13:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -932,10 +932,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2874,
+                    "id": 46223,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3029:7:13",
+                    "src": "3029:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -945,36 +945,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2995:48:13"
+              "src": "2995:48:31"
             }
           },
           {
-            "id": 2882,
+            "id": 46231,
             "nodeType": "ErrorDefinition",
-            "src": "3207:42:13",
+            "src": "3207:42:31",
             "nodes": [],
             "documentation": {
-              "id": 2878,
+              "id": 46227,
               "nodeType": "StructuredDocumentation",
-              "src": "3050:152:13",
+              "src": "3050:152:31",
               "text": " @dev Indicates a failure with the token `sender`. Used in transfers.\n @param sender Address whose tokens are being transferred."
             },
             "errorSelector": "73c6ac6e",
             "name": "ERC721InvalidSender",
-            "nameLocation": "3213:19:13",
+            "nameLocation": "3213:19:31",
             "parameters": {
-              "id": 2881,
+              "id": 46230,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2880,
+                  "id": 46229,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "3241:6:13",
+                  "nameLocation": "3241:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2882,
-                  "src": "3233:14:13",
+                  "scope": 46231,
+                  "src": "3233:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -982,10 +982,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2879,
+                    "id": 46228,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3233:7:13",
+                    "src": "3233:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -995,36 +995,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3232:16:13"
+              "src": "3232:16:31"
             }
           },
           {
-            "id": 2887,
+            "id": 46236,
             "nodeType": "ErrorDefinition",
-            "src": "3419:46:13",
+            "src": "3419:46:31",
             "nodes": [],
             "documentation": {
-              "id": 2883,
+              "id": 46232,
               "nodeType": "StructuredDocumentation",
-              "src": "3255:159:13",
+              "src": "3255:159:31",
               "text": " @dev Indicates a failure with the token `receiver`. Used in transfers.\n @param receiver Address to which tokens are being transferred."
             },
             "errorSelector": "64a0ae92",
             "name": "ERC721InvalidReceiver",
-            "nameLocation": "3425:21:13",
+            "nameLocation": "3425:21:31",
             "parameters": {
-              "id": 2886,
+              "id": 46235,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2885,
+                  "id": 46234,
                   "mutability": "mutable",
                   "name": "receiver",
-                  "nameLocation": "3455:8:13",
+                  "nameLocation": "3455:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2887,
-                  "src": "3447:16:13",
+                  "scope": 46236,
+                  "src": "3447:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1032,10 +1032,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2884,
+                    "id": 46233,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3447:7:13",
+                    "src": "3447:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1045,36 +1045,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3446:18:13"
+              "src": "3446:18:31"
             }
           },
           {
-            "id": 2894,
+            "id": 46243,
             "nodeType": "ErrorDefinition",
-            "src": "3723:68:13",
+            "src": "3723:68:31",
             "nodes": [],
             "documentation": {
-              "id": 2888,
+              "id": 46237,
               "nodeType": "StructuredDocumentation",
-              "src": "3471:247:13",
+              "src": "3471:247:31",
               "text": " @dev Indicates a failure with the `operator`’s approval. Used in transfers.\n @param operator Address that may be allowed to operate on tokens without being their owner.\n @param tokenId Identifier number of a token."
             },
             "errorSelector": "177e802f",
             "name": "ERC721InsufficientApproval",
-            "nameLocation": "3729:26:13",
+            "nameLocation": "3729:26:31",
             "parameters": {
-              "id": 2893,
+              "id": 46242,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2890,
+                  "id": 46239,
                   "mutability": "mutable",
                   "name": "operator",
-                  "nameLocation": "3764:8:13",
+                  "nameLocation": "3764:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2894,
-                  "src": "3756:16:13",
+                  "scope": 46243,
+                  "src": "3756:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1082,10 +1082,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2889,
+                    "id": 46238,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3756:7:13",
+                    "src": "3756:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1096,13 +1096,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2892,
+                  "id": 46241,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "3782:7:13",
+                  "nameLocation": "3782:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2894,
-                  "src": "3774:15:13",
+                  "scope": 46243,
+                  "src": "3774:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1110,10 +1110,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2891,
+                    "id": 46240,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3774:7:13",
+                    "src": "3774:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1122,36 +1122,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3755:35:13"
+              "src": "3755:35:31"
             }
           },
           {
-            "id": 2899,
+            "id": 46248,
             "nodeType": "ErrorDefinition",
-            "src": "3976:46:13",
+            "src": "3976:46:31",
             "nodes": [],
             "documentation": {
-              "id": 2895,
+              "id": 46244,
               "nodeType": "StructuredDocumentation",
-              "src": "3797:174:13",
+              "src": "3797:174:31",
               "text": " @dev Indicates a failure with the `approver` of a token to be approved. Used in approvals.\n @param approver Address initiating an approval operation."
             },
             "errorSelector": "a9fbf51f",
             "name": "ERC721InvalidApprover",
-            "nameLocation": "3982:21:13",
+            "nameLocation": "3982:21:31",
             "parameters": {
-              "id": 2898,
+              "id": 46247,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2897,
+                  "id": 46246,
                   "mutability": "mutable",
                   "name": "approver",
-                  "nameLocation": "4012:8:13",
+                  "nameLocation": "4012:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2899,
-                  "src": "4004:16:13",
+                  "scope": 46248,
+                  "src": "4004:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1159,10 +1159,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2896,
+                    "id": 46245,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4004:7:13",
+                    "src": "4004:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1172,36 +1172,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4003:18:13"
+              "src": "4003:18:31"
             }
           },
           {
-            "id": 2904,
+            "id": 46253,
             "nodeType": "ErrorDefinition",
-            "src": "4230:46:13",
+            "src": "4230:46:31",
             "nodes": [],
             "documentation": {
-              "id": 2900,
+              "id": 46249,
               "nodeType": "StructuredDocumentation",
-              "src": "4028:197:13",
+              "src": "4028:197:31",
               "text": " @dev Indicates a failure with the `operator` to be approved. Used in approvals.\n @param operator Address that may be allowed to operate on tokens without being their owner."
             },
             "errorSelector": "5b08ba18",
             "name": "ERC721InvalidOperator",
-            "nameLocation": "4236:21:13",
+            "nameLocation": "4236:21:31",
             "parameters": {
-              "id": 2903,
+              "id": 46252,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2902,
+                  "id": 46251,
                   "mutability": "mutable",
                   "name": "operator",
-                  "nameLocation": "4266:8:13",
+                  "nameLocation": "4266:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2904,
-                  "src": "4258:16:13",
+                  "scope": 46253,
+                  "src": "4258:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1209,10 +1209,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2901,
+                    "id": 46250,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4258:7:13",
+                    "src": "4258:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1222,7 +1222,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4257:18:13"
+              "src": "4257:18:31"
             }
           }
         ],
@@ -1232,62 +1232,62 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 2858,
+          "id": 46207,
           "nodeType": "StructuredDocumentation",
-          "src": "2044:141:13",
+          "src": "2044:141:31",
           "text": " @dev Standard ERC721 Errors\n Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC721 tokens."
         },
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          2905
+          46254
         ],
         "name": "IERC721Errors",
-        "nameLocation": "2196:13:13",
-        "scope": 2953,
+        "nameLocation": "2196:13:31",
+        "scope": 46302,
         "usedErrors": [
-          2863,
-          2868,
-          2877,
-          2882,
-          2887,
-          2894,
-          2899,
-          2904
+          46212,
+          46217,
+          46226,
+          46231,
+          46236,
+          46243,
+          46248,
+          46253
         ],
         "usedEvents": []
       },
       {
-        "id": 2952,
+        "id": 46301,
         "nodeType": "ContractDefinition",
-        "src": "4424:2107:13",
+        "src": "4424:2107:31",
         "nodes": [
           {
-            "id": 2917,
+            "id": 46266,
             "nodeType": "ErrorDefinition",
-            "src": "4821:99:13",
+            "src": "4821:99:31",
             "nodes": [],
             "documentation": {
-              "id": 2907,
+              "id": 46256,
               "nodeType": "StructuredDocumentation",
-              "src": "4455:361:13",
+              "src": "4455:361:31",
               "text": " @dev Indicates an error related to the current `balance` of a `sender`. Used in transfers.\n @param sender Address whose tokens are being transferred.\n @param balance Current balance for the interacting account.\n @param needed Minimum amount required to perform a transfer.\n @param tokenId Identifier number of a token."
             },
             "errorSelector": "03dee4c5",
             "name": "ERC1155InsufficientBalance",
-            "nameLocation": "4827:26:13",
+            "nameLocation": "4827:26:31",
             "parameters": {
-              "id": 2916,
+              "id": 46265,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2909,
+                  "id": 46258,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "4862:6:13",
+                  "nameLocation": "4862:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2917,
-                  "src": "4854:14:13",
+                  "scope": 46266,
+                  "src": "4854:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1295,10 +1295,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2908,
+                    "id": 46257,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4854:7:13",
+                    "src": "4854:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1309,13 +1309,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2911,
+                  "id": 46260,
                   "mutability": "mutable",
                   "name": "balance",
-                  "nameLocation": "4878:7:13",
+                  "nameLocation": "4878:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2917,
-                  "src": "4870:15:13",
+                  "scope": 46266,
+                  "src": "4870:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1323,10 +1323,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2910,
+                    "id": 46259,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4870:7:13",
+                    "src": "4870:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1336,13 +1336,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2913,
+                  "id": 46262,
                   "mutability": "mutable",
                   "name": "needed",
-                  "nameLocation": "4895:6:13",
+                  "nameLocation": "4895:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2917,
-                  "src": "4887:14:13",
+                  "scope": 46266,
+                  "src": "4887:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1350,10 +1350,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2912,
+                    "id": 46261,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4887:7:13",
+                    "src": "4887:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1363,13 +1363,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2915,
+                  "id": 46264,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "4911:7:13",
+                  "nameLocation": "4911:7:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2917,
-                  "src": "4903:15:13",
+                  "scope": 46266,
+                  "src": "4903:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1377,10 +1377,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2914,
+                    "id": 46263,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "4903:7:13",
+                    "src": "4903:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1389,36 +1389,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "4853:66:13"
+              "src": "4853:66:31"
             }
           },
           {
-            "id": 2922,
+            "id": 46271,
             "nodeType": "ErrorDefinition",
-            "src": "5083:43:13",
+            "src": "5083:43:31",
             "nodes": [],
             "documentation": {
-              "id": 2918,
+              "id": 46267,
               "nodeType": "StructuredDocumentation",
-              "src": "4926:152:13",
+              "src": "4926:152:31",
               "text": " @dev Indicates a failure with the token `sender`. Used in transfers.\n @param sender Address whose tokens are being transferred."
             },
             "errorSelector": "01a83514",
             "name": "ERC1155InvalidSender",
-            "nameLocation": "5089:20:13",
+            "nameLocation": "5089:20:31",
             "parameters": {
-              "id": 2921,
+              "id": 46270,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2920,
+                  "id": 46269,
                   "mutability": "mutable",
                   "name": "sender",
-                  "nameLocation": "5118:6:13",
+                  "nameLocation": "5118:6:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2922,
-                  "src": "5110:14:13",
+                  "scope": 46271,
+                  "src": "5110:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1426,10 +1426,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2919,
+                    "id": 46268,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5110:7:13",
+                    "src": "5110:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1439,36 +1439,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5109:16:13"
+              "src": "5109:16:31"
             }
           },
           {
-            "id": 2927,
+            "id": 46276,
             "nodeType": "ErrorDefinition",
-            "src": "5296:47:13",
+            "src": "5296:47:31",
             "nodes": [],
             "documentation": {
-              "id": 2923,
+              "id": 46272,
               "nodeType": "StructuredDocumentation",
-              "src": "5132:159:13",
+              "src": "5132:159:31",
               "text": " @dev Indicates a failure with the token `receiver`. Used in transfers.\n @param receiver Address to which tokens are being transferred."
             },
             "errorSelector": "57f447ce",
             "name": "ERC1155InvalidReceiver",
-            "nameLocation": "5302:22:13",
+            "nameLocation": "5302:22:31",
             "parameters": {
-              "id": 2926,
+              "id": 46275,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2925,
+                  "id": 46274,
                   "mutability": "mutable",
                   "name": "receiver",
-                  "nameLocation": "5333:8:13",
+                  "nameLocation": "5333:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2927,
-                  "src": "5325:16:13",
+                  "scope": 46276,
+                  "src": "5325:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1476,10 +1476,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2924,
+                    "id": 46273,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5325:7:13",
+                    "src": "5325:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1489,36 +1489,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5324:18:13"
+              "src": "5324:18:31"
             }
           },
           {
-            "id": 2934,
+            "id": 46283,
             "nodeType": "ErrorDefinition",
-            "src": "5610:68:13",
+            "src": "5610:68:31",
             "nodes": [],
             "documentation": {
-              "id": 2928,
+              "id": 46277,
               "nodeType": "StructuredDocumentation",
-              "src": "5349:256:13",
+              "src": "5349:256:31",
               "text": " @dev Indicates a failure with the `operator`’s approval. Used in transfers.\n @param operator Address that may be allowed to operate on tokens without being their owner.\n @param owner Address of the current owner of a token."
             },
             "errorSelector": "e237d922",
             "name": "ERC1155MissingApprovalForAll",
-            "nameLocation": "5616:28:13",
+            "nameLocation": "5616:28:31",
             "parameters": {
-              "id": 2933,
+              "id": 46282,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2930,
+                  "id": 46279,
                   "mutability": "mutable",
                   "name": "operator",
-                  "nameLocation": "5653:8:13",
+                  "nameLocation": "5653:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2934,
-                  "src": "5645:16:13",
+                  "scope": 46283,
+                  "src": "5645:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1526,10 +1526,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2929,
+                    "id": 46278,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5645:7:13",
+                    "src": "5645:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1540,13 +1540,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2932,
+                  "id": 46281,
                   "mutability": "mutable",
                   "name": "owner",
-                  "nameLocation": "5671:5:13",
+                  "nameLocation": "5671:5:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2934,
-                  "src": "5663:13:13",
+                  "scope": 46283,
+                  "src": "5663:13:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1554,10 +1554,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2931,
+                    "id": 46280,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5663:7:13",
+                    "src": "5663:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1567,36 +1567,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5644:33:13"
+              "src": "5644:33:31"
             }
           },
           {
-            "id": 2939,
+            "id": 46288,
             "nodeType": "ErrorDefinition",
-            "src": "5863:47:13",
+            "src": "5863:47:31",
             "nodes": [],
             "documentation": {
-              "id": 2935,
+              "id": 46284,
               "nodeType": "StructuredDocumentation",
-              "src": "5684:174:13",
+              "src": "5684:174:31",
               "text": " @dev Indicates a failure with the `approver` of a token to be approved. Used in approvals.\n @param approver Address initiating an approval operation."
             },
             "errorSelector": "3e31884e",
             "name": "ERC1155InvalidApprover",
-            "nameLocation": "5869:22:13",
+            "nameLocation": "5869:22:31",
             "parameters": {
-              "id": 2938,
+              "id": 46287,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2937,
+                  "id": 46286,
                   "mutability": "mutable",
                   "name": "approver",
-                  "nameLocation": "5900:8:13",
+                  "nameLocation": "5900:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2939,
-                  "src": "5892:16:13",
+                  "scope": 46288,
+                  "src": "5892:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1604,10 +1604,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2936,
+                    "id": 46285,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "5892:7:13",
+                    "src": "5892:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1617,36 +1617,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "5891:18:13"
+              "src": "5891:18:31"
             }
           },
           {
-            "id": 2944,
+            "id": 46293,
             "nodeType": "ErrorDefinition",
-            "src": "6118:47:13",
+            "src": "6118:47:31",
             "nodes": [],
             "documentation": {
-              "id": 2940,
+              "id": 46289,
               "nodeType": "StructuredDocumentation",
-              "src": "5916:197:13",
+              "src": "5916:197:31",
               "text": " @dev Indicates a failure with the `operator` to be approved. Used in approvals.\n @param operator Address that may be allowed to operate on tokens without being their owner."
             },
             "errorSelector": "ced3e100",
             "name": "ERC1155InvalidOperator",
-            "nameLocation": "6124:22:13",
+            "nameLocation": "6124:22:31",
             "parameters": {
-              "id": 2943,
+              "id": 46292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2942,
+                  "id": 46291,
                   "mutability": "mutable",
                   "name": "operator",
-                  "nameLocation": "6155:8:13",
+                  "nameLocation": "6155:8:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2944,
-                  "src": "6147:16:13",
+                  "scope": 46293,
+                  "src": "6147:16:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1654,10 +1654,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2941,
+                    "id": 46290,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6147:7:13",
+                    "src": "6147:7:31",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1667,36 +1667,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6146:18:13"
+              "src": "6146:18:31"
             }
           },
           {
-            "id": 2951,
+            "id": 46300,
             "nodeType": "ErrorDefinition",
-            "src": "6456:73:13",
+            "src": "6456:73:31",
             "nodes": [],
             "documentation": {
-              "id": 2945,
+              "id": 46294,
               "nodeType": "StructuredDocumentation",
-              "src": "6171:280:13",
+              "src": "6171:280:31",
               "text": " @dev Indicates an array length mismatch between ids and values in a safeBatchTransferFrom operation.\n Used in batch transfers.\n @param idsLength Length of the array of token identifiers\n @param valuesLength Length of the array of token amounts"
             },
             "errorSelector": "5b059991",
             "name": "ERC1155InvalidArrayLength",
-            "nameLocation": "6462:25:13",
+            "nameLocation": "6462:25:31",
             "parameters": {
-              "id": 2950,
+              "id": 46299,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2947,
+                  "id": 46296,
                   "mutability": "mutable",
                   "name": "idsLength",
-                  "nameLocation": "6496:9:13",
+                  "nameLocation": "6496:9:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2951,
-                  "src": "6488:17:13",
+                  "scope": 46300,
+                  "src": "6488:17:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1704,10 +1704,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2946,
+                    "id": 46295,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6488:7:13",
+                    "src": "6488:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1717,13 +1717,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2949,
+                  "id": 46298,
                   "mutability": "mutable",
                   "name": "valuesLength",
-                  "nameLocation": "6515:12:13",
+                  "nameLocation": "6515:12:31",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2951,
-                  "src": "6507:20:13",
+                  "scope": 46300,
+                  "src": "6507:20:31",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1731,10 +1731,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2948,
+                    "id": 46297,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "6507:7:13",
+                    "src": "6507:7:31",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1743,7 +1743,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "6487:41:13"
+              "src": "6487:41:31"
             }
           }
         ],
@@ -1753,31 +1753,31 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 2906,
+          "id": 46255,
           "nodeType": "StructuredDocumentation",
-          "src": "4280:143:13",
+          "src": "4280:143:31",
           "text": " @dev Standard ERC1155 Errors\n Interface of the https://eips.ethereum.org/EIPS/eip-6093[ERC-6093] custom errors for ERC1155 tokens."
         },
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          2952
+          46301
         ],
         "name": "IERC1155Errors",
-        "nameLocation": "4434:14:13",
-        "scope": 2953,
+        "nameLocation": "4434:14:31",
+        "scope": 46302,
         "usedErrors": [
-          2917,
-          2922,
-          2927,
-          2934,
-          2939,
-          2944,
-          2951
+          46266,
+          46271,
+          46276,
+          46283,
+          46288,
+          46293,
+          46300
         ],
         "usedEvents": []
       }
     ],
     "license": "MIT"
   },
-  "id": 13
+  "id": 31
 }
